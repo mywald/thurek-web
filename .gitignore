@@ -1,40 +1,16 @@
-# Whitelist: nur was die Webseite ausliefert. Alles andere bleibt draußen –
-# auch die Build-Werkzeuge der Vorlage (gulpfile.js, package*.json, scss/,
-# node_modules/), die IDE-Einstellungen (.idea/) und unbenutzte Vendor-Dateien.
+# Whitelist: nur was die Webseite ausliefert. Alles andere bleibt draußen,
+# z. B. IDE-Einstellungen (.idea/) und Systemdateien.
 /*
 !/.gitignore
 !/README.md
-# Lizenzen fremder Teile (Vorlage Freelancer, jQuery Easing)
-!/LICENSES/
 !/CNAME
 !/index.html
 !/favicon.ico
 !/favicon.svg
+!/css/
 !/img/
 # Schriften (Lato, Montserrat) samt Lizenz, lokal statt von Google Fonts
 !/fonts/
-
-# Eigene Styles und Scripts: nur die eingebundenen Dateien
-!/css/
-/css/*
-!/css/thurek.min.css
-!/css/fonts.css
-!/js/
-/js/*
-!/js/freelancer.min.js
-!/js/jqBootstrapValidation.js
-
-# Bibliotheken: nur die eingebundenen Dateien (Verzeichnisse wieder freigeben,
-# sonst greifen die Ausnahmen darunter nicht)
-!/vendor/
-/vendor/**
-!/vendor/**/
-!/vendor/bootstrap/js/bootstrap.bundle.min.js
-!/vendor/jquery/jquery.min.js
-!/vendor/jquery-easing/jquery.easing.min.js
-!/vendor/fontawesome-free/css/all.min.css
-!/vendor/fontawesome-free/webfonts/*.woff2
-!/vendor/fontawesome-free/webfonts/*.woff
 
 # Systemdateien
 .DS_Store
