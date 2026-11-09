@@ -21,10 +21,30 @@
 
     <!-- Theme CSS -->
     <link href="css/thurek.min.css" rel="stylesheet">
+    <style>
+        /* Tanzpaar statt Noten-Icon in den Trennlinien, Größe wie die Icons (font-size) */
+        .tanzpaar { width: 1.45em; height: 1.8em; vertical-align: middle; }
+    </style>
 
 </head>
 
 <body id="page-top">
+
+<!-- Tanzpaar wie im Favicon (favicon.svg), Farbe von der Umgebung (currentColor) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute">
+    <symbol id="tanzpaar" viewBox="11 4 45 56">
+        <g fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="21" cy="14" r="5.5" stroke="none"/>
+            <path d="M17 22 L27 22 L26 38 L19 38 Z" stroke-width="2"/>
+            <path d="M20 37 L15 56 M25 37 L29 56" fill="none" stroke-width="4.5"/>
+            <circle cx="44" cy="15" r="5" stroke="none"/>
+            <path d="M37 22 L45 23 L42 35 L37 35 Z" stroke-width="2"/>
+            <path d="M37 34 L42 34 L53 55 Q42 59 30 56 Z" stroke-width="2"/>
+            <path d="M18 23 L32 7 L39 23" fill="none" stroke-width="3.5"/>
+            <path d="M26 26 L38 30" fill="none" stroke-width="3.5"/>
+        </g>
+    </symbol>
+</svg>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -69,7 +89,7 @@
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon">
-                <i class="fas fa-music"></i>
+                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
             </div>
             <div class="divider-custom-line"></div>
         </div>
@@ -91,7 +111,7 @@
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon">
-                <i class="fas fa-music"></i>
+                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
             </div>
             <div class="divider-custom-line"></div>
         </div>
@@ -158,7 +178,7 @@
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon">
-                <i class="fas fa-music"></i>
+                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
             </div>
             <div class="divider-custom-line"></div>
         </div>
@@ -244,7 +264,7 @@
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon">
-                <i class="fas fa-music"></i>
+                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
             </div>
             <div class="divider-custom-line"></div>
         </div>
@@ -319,7 +339,7 @@
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon">
-                <i class="fas fa-music"></i>
+                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
             </div>
             <div class="divider-custom-line"></div>
         </div>
@@ -440,7 +460,7 @@
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                                 <div class="divider-custom-icon">
-                                    <i class="fas fa-music"></i>
+                                    <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
                                 </div>
                                 <div class="divider-custom-line"></div>
                             </div>
@@ -490,7 +510,7 @@
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                                 <div class="divider-custom-icon">
-                                    <i class="fas fa-music"></i>
+                                    <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
                                 </div>
                                 <div class="divider-custom-line"></div>
                             </div>
