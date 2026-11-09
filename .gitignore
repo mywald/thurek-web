@@ -1,0 +1,34 @@
+# Whitelist: nur was die Webseite ausliefert. Alles andere bleibt draußen –
+# auch die Build-Werkzeuge der Vorlage (gulpfile.js, package*.json, scss/,
+# node_modules/), die IDE-Einstellungen (.idea/) und unbenutzte Vendor-Dateien.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/CNAME
+!/index.html
+!/img/
+
+# Eigene Styles und Scripts: nur die eingebundenen Dateien
+!/css/
+/css/*
+!/css/thurek.min.css
+!/js/
+/js/*
+!/js/freelancer.min.js
+!/js/jqBootstrapValidation.js
+
+# Bibliotheken: nur die eingebundenen Dateien (Verzeichnisse wieder freigeben,
+# sonst greifen die Ausnahmen darunter nicht)
+!/vendor/
+/vendor/**
+!/vendor/**/
+!/vendor/bootstrap/js/bootstrap.bundle.min.js
+!/vendor/jquery/jquery.min.js
+!/vendor/jquery-easing/jquery.easing.min.js
+!/vendor/fontawesome-free/css/all.min.css
+!/vendor/fontawesome-free/webfonts/*.woff2
+!/vendor/fontawesome-free/webfonts/*.woff
+
+# Systemdateien
+.DS_Store
