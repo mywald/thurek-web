@@ -1,17 +1,8 @@
-# Vorschau der Webseite im Heimnetz über GitLab Pages:
-#   https://pages.mywald.de/websites/thurek/                  Stand von main
-#   https://pages.mywald.de/websites/thurek/vorschau/         Liste der Feature-Branches
-#   https://pages.mywald.de/websites/thurek/vorschau/<name>/  Branch features/<name>
+# Die Webseite im Heimnetz ansehen über GitLab Pages:
+#   https://pages.mywald.de/websites/thurek/  (Stand von main)
 # Die öffentliche Seite www.thurek.de kommt weiterhin über den Mirror von
-# GitHub Pages; diese Datei liefert GitHub nicht aus (Jekyll lässt Dateien mit
-# Punkt am Anfang weg).
-#
-# Der Runner nimmt nur Jobs von main (protected). Die Feature-Branches baut
-# deshalb der main-Job mit: Er holt alle features/*-Branches und legt sie unter
-# vorschau/ ab. Damit eine neue Branch-Version ohne Merge sichtbar wird, läuft
-# der Job zusätzlich per Pipeline-Zeitplan (Build → Pipeline-Zeitpläne);
-# sofort geht es mit Build → Pipelines → Pipeline ausführen auf main.
-# Gelöschte Branches verschwinden beim nächsten Lauf.
+# GitHub Pages. Dort stört diese Datei nicht: GitHub Pages (Jekyll) liefert
+# Dateien mit Punkt am Anfang nicht aus, und GitHub Actions liest sie nicht.
 pages:
   image:
     name: alpine/git:v2.52.0
@@ -23,28 +14,9 @@ pages:
     GIT_DEPTH: "1"
   script:
     # Nur eingecheckte Dateien (git archive), also genau die Whitelist aus .gitignore
-    - mkdir -p public/vorschau
+    - mkdir public
     - git archive HEAD | tar -x -C public
-    - git fetch --prune --depth=1 origin '+refs/heads/features/*:refs/remotes/origin/features/*'
-    - |
-      for name in $(git for-each-ref --format='%(refname:strip=4)' refs/remotes/origin/features/); do
-        mkdir -p "public/vorschau/$name"
-        git archive "refs/remotes/origin/features/$name" | tar -x -C "public/vorschau/$name"
-        when=$(git log -1 --format='%cd' --date=format:'%d.%m.%Y %H:%M' "refs/remotes/origin/features/$name")
-        echo "<li><a href=\"$name/\">$name</a> <small>($when)</small></li>" >> branches.html
-      done
-    - |
-      {
-        echo '<!doctype html><html lang="de"><meta charset="utf-8">'
-        echo '<meta name="viewport" content="width=device-width, initial-scale=1">'
-        echo '<title>Vorschau – Tanzschule Thurek</title>'
-        echo '<body style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem">'
-        echo '<h1>Vorschau der Feature-Branches</h1>'
-        echo "<p><a href=\"../\">main</a> · Stand $(date '+%d.%m.%Y %H:%M') UTC</p>"
-        if [ -s branches.html ]; then echo '<ul>'; cat branches.html; echo '</ul>'; else echo '<p>Keine Feature-Branches.</p>'; fi
-      } > public/vorschau/index.html
-    # Repo-Dateien gehören nicht zur Seite
-    - find public \( -name '.git*' -o -name README.md -o -name CNAME \) -exec rm -rf {} +
+    - rm public/.gitignore public/.gitlab-ci.yml public/README.md public/CNAME
   artifacts:
     paths:
       - public

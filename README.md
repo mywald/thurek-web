@@ -17,14 +17,8 @@ Eingecheckt ist nur, was die Seite ausliefert (`.gitignore` ist eine Whitelist).
 
 ## Vorschau
 
-Im Heimnetz über GitLab Pages (`.gitlab-ci.yml`):
-
-- https://pages.mywald.de/websites/thurek/ – Stand von `main`
-- https://pages.mywald.de/websites/thurek/vorschau/ – je Branch `features/<name>` eine Vorschau
-  unter `vorschau/<name>/`
-
-Aktualisiert bei jedem Merge auf `main` und per Pipeline-Zeitplan; sofort über
-Build → Pipelines → *Pipeline ausführen* auf `main`.
+Im Heimnetz unter https://pages.mywald.de/websites/thurek/ (GitLab Pages, `.gitlab-ci.yml`),
+aktualisiert bei jedem Merge auf `main`.
 
 ## Rechte
 
