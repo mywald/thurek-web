@@ -4,7 +4,8 @@
 /*
 !/.gitignore
 !/README.md
-!/LICENSE
+# Lizenzen fremder Teile (Vorlage Freelancer, jQuery Easing)
+!/LICENSES/
 !/CNAME
 !/index.html
 !/favicon.ico
