@@ -1,32 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tanzschule Thurek Erlangen</title>
+    <meta name="description" content="Tanzschule Thurek im Kulturforum Logenhaus Erlangen: Hochzeitskurs, Bodyflirt,
+          Hobbykreis, Tanzkreis, Übungsparties und Privatstunden – sonntags mit Jörg Müsebeck.">
+    <meta name="theme-color" content="#f88546">
     <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
-    <!-- Custom fonts for this theme -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/fonts.css" rel="stylesheet" type="text/css">
-
-    <!-- Theme CSS -->
-    <link href="css/thurek.min.css" rel="stylesheet">
-    <style>
-        /* Tanzpaar statt Noten-Icon in den Trennlinien, Größe wie die Icons (font-size) */
-        .tanzpaar { width: 1.45em; height: 1.8em; vertical-align: middle; }
-    </style>
-
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/thurek.css">
 </head>
-
-<body id="page-top">
+<body>
 
 <!-- Tanzpaar wie im Favicon (favicon.svg), Farbe von der Umgebung (currentColor) -->
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute">
@@ -44,522 +31,197 @@
     </symbol>
 </svg>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Tanzschule Thurek</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Kursangebot</a>
-                </li>
-                <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#dates">Termine</a>
-                </li>
-                <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#prices">Preise</a>
-                </li>
-                <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Über mich</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Masthead -->
-<header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-
-        <!-- Masthead Avatar Image -->
-        <img class="masthead-avatar mb-5" src="img/joerg2.jpg" alt="">
-
-        <!-- Masthead Heading -->
-        <h1 class="masthead-heading text-uppercase mb-0">Tanzschule Thurek</h1>
-
-        <!-- Icon Divider -->
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon">
-                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
-            </div>
-            <div class="divider-custom-line"></div>
-        </div>
-
-        <!-- Masthead Subheading -->
-        <p class="masthead-subheading font-weight-light mb-0">Im Kulturforum Logenhaus Erlangen</p>
-
+<header class="topbar">
+    <div class="wrap topbar-inner">
+        <a class="brand" href="#start">
+            <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
+            Tanzschule Thurek
+        </a>
+        <nav aria-label="Abschnitte">
+            <a href="#kurse">Kurse</a>
+            <a href="#ueber-mich">Über mich</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
     </div>
 </header>
 
-<!-- Portfolio Section -->
-<section class="page-section portfolio" id="portfolio">
-    <div class="container">
+<main>
 
-        <!-- Portfolio Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Mein Angebot für Sie</h2>
-
-        <!-- Icon Divider -->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon">
-                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
-            </div>
-            <div class="divider-custom-line"></div>
-        </div>
-
-        <!-- Portfolio Grid Items -->
-        <div class="row">
-
-            <!-- Portfolio Item 1 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Hochzeitskurs</h2>
-                <p class="lead">mit meiner langjährigen Erfahrung mache ich Sie in 5 Stunden fit für Ihre Hochzeit</p>
-            </div>
-
-            <!-- Portfolio Item 2 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Bodyflirt</h2>
-                <p class="lead">Anfänger lernen bei mir in 10 Stunden die wichtigsten Grundschritte</p>
-            </div>
-
-            <!-- Portfolio Item 3 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Hobbykreis</h2>
-                <p class="lead">Fortgeschrittene erfahrene Tänzer können sich hier weiterentwickeln</p>
-            </div>
-
-            <!-- Portfolio Item 4 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Übungsparties</h2>
-                <p class="lead">Gemeinsam Spaß haben in der Praxis</p>
-            </div>
-
-            <!-- Portfolio Item 5 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Tanzkreis</h2>
-                <p class="lead">Sie sind herzlich willkommen im langjährigen Tanzfreundeskreis der Tanzschule Thurek</p>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <div class="divider-custom"></div>
-
-        <div class="row">
-
-            <div class="col text-center text-secondary">
-                <p class="lead">Ich gebe auch Privatstunden und unterrichte Gruppen und Paare in privaten oder in
-                    diversen Gruppenräumen. Nach Absprache.</p>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-    </div>
-</section>
-
-<!-- About Section -->
-<section class="page-section bg-primary text-white mb-0" id="dates">
-    <div class="container">
-
-        <!-- About Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-white">Termine</h2>
-
-        <!-- Icon Divider -->
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon">
-                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
-            </div>
-            <div class="divider-custom-line"></div>
-        </div>
-
-        <!-- Portfolio Grid Items -->
-        <div class="row">
-            <div class="col text-white text-center">
-                <h3>Alle Kurse finden am Sonntag statt</h3>
-            </div>
-        </div>
-
-        <div class="divider-custom divider-light">
-        </div>
-
-        <!-- Portfolio Grid Items -->
-        <div class="row">
-
-            <!-- Portfolio Item 1 -->
-            <div class="col-md-6 col-lg-4 text-center text-white">
-                <h2>Hochzeitskurs</h2>
-                <h4>Sonntags 18:00 Uhr</h4>
-                <p class="lead">Starttermin 04.10.2026<br>
-                    Verbindliche Anmeldung bis zum 01.10.2026</p>
-            </div>
-
-            <!-- Portfolio Item 2 -->
-            <div class="col-md-6 col-lg-4 text-center text-white">
-                <h2>Bodyflirt</h2>
-                <h4>18:00 Uhr</h4>
-                <p class="lead">Starttermin 04.10.2026<br>
-                    Verbindliche Anmeldung bis zum 01.10.2026</p>
-            </div>
-
-            <!-- Portfolio Item 3 -->
-            <div class="col-md-6 col-lg-4 text-center text-white">
-                <h2>Hobbykreis</h2>
-                <h4>19:00 Uhr</h4>
-                <p class="lead">Sie können jederzeit anfangen</p>
-            </div>
-
-            <!-- Portfolio Item 4 -->
-            <div class="col-md-6 col-lg-4 text-center text-white">
-                <h2>Übungsparties</h2>
-                <h4>19:00 - 22:00 Uhr</h4>
-                <p class="lead">- 11.10.26<br> - tbd im Dezember (Weihnachtstanz)
-                </p>
-                <p>An diesen Terminen entfällt Hobby- und Tanzkreis</p>
-            </div>
-
-            <!-- Portfolio Item 5 -->
-            <div class="col-md-6 col-lg-4 text-center text-white">
-                <h2>Tanzkreis</h2>
-                <h4>20:00 Uhr</h4>
-                <p class="lead">Sie können jederzeit anfangen</p>
-            </div>
-
-
-        </div>
-        <!-- /.row -->
-
-        <div class="divider-custom"></div>
-
-        <div class="row">
-
-            <div class="col text-center text-white">
-                <h2>Alle Kurse finden ab 3 Paaren statt</h2>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-    </div>
-</section>
-
-<!-- Preise Section -->
-<section class="page-section portfolio" id="prices">
-    <div class="container">
-
-        <!-- Portfolio Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Kurspreise</h2>
-
-        <!-- Icon Divider -->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon">
-                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
-            </div>
-            <div class="divider-custom-line"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 col-lg-12 text-center text-primary" style="padding-bottom: 20px">
-                <b>Diese Preise gelten für Neueinsteiger ab 1. September 2025:</b>
-            </div>
-        </div>
-
-        <!-- Portfolio Grid Items -->
-        <div class="row">
-
-            <!-- Portfolio Item 1 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Hochzeitskurs</h2>
-                <p class="lead">5 x 1 Std.</p>
-                <p class="lead">100 €</p>
-            </div>
-
-            <!-- Portfolio Item 2 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Bodyflirt</h2>
-                <p class="lead">10 x 1 Std.</p>
-                <p class="lead">180 €</p>
-            </div>
-
-            <!-- Portfolio Item 3 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Hobbykreis</h2>
-                <p class="lead">je 1 Std. Unterricht</p>
-                <p class="lead">5er Karte: 100 €</p>
-                <p class="lead">10er Karte: 180 €</p>
-            </div>
-
-            <!-- Portfolio Item 4 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Übungsparties</h2>
-                <p class="lead">Tanzkreis: kostenlos</p>
-                <p class="lead">Andere Kurse: 5 €</p>
-                <p class="lead">Gäste: 7 €</p>
-            </div>
-
-            <!-- Portfolio Item 5 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Tanzkreis</h2>
-                <p class="lead">2 Std. Unterricht pro Woche</p>
-                <p class="lead">49 € monatlich</p>
-            </div>
-
-
-            <!-- Portfolio Item 7 -->
-            <div class="col-md-6 col-lg-4 text-center text-secondary">
-                <h2>Privatstunde</h2>
-                <p class="lead">60 min</p>
-                <p class="lead">75 €</p>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-    </div>
-</section>
-
-<section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container">
-
-        <!-- Portfolio Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase mb-0 text-white">Über mich</h2>
-
-        <!-- Icon Divider -->
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon">
-                <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
-            </div>
-            <div class="divider-custom-line"></div>
-        </div>
-
-        <!-- Masthead Subheading -->
-        <h2 class="text-center mb-0">Tanzen ist gut für Körper und Seele</h2>
-
-        <div class="divider-custom divider-light">
-        </div>
-
-        <!-- Portfolio Grid Items -->
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid joerg" src="img/joerg.jpg">
-                <p class="lead text-justify">Ich bin Mitte 60 und lebe meinen Lebenstraum - das Tanzen - noch immer aus.
-                    Mit 15 habe ich 1970 meinen ersten Tanzkurs belegt. Nachdem ich viele Kurse besuchte, habe ich auch
-                    einige Jahre erfolgreich
-                    an Tanzturnieren teilgenommen. Es wurden von mir in der Tanzschule diverse Formationen aufgebaut.
-                    <br>
-                    Nach einer 3-jährigen ADTV-Tanzlehrerausbildung hatte ich die fachlichen Voraussetzungen und kaufte
-                    1987 die "Tanzschule Thurek" in Erlangen.
-                    Seit einigen Jahren betreibe ich sie nicht mehr kommerziell ausgerichtet, sondern nur noch
-                    hobbymäßig! Und dieses Hobby möchte ich mit Ihnen teilen!<br>
-                    Ich biete Ihnen vom Anfänger über Fortgeschrittene bis zum Tanzkreis einmal wöchentlich an, diesem
-                    Hobby nachzugehen.
-                    <br>Natürlich werden auch Hochzeitskurse
-                    und Privatstunden angeboten.
-                </p>
-                <p class="lead text-center">
-                    Ich freue mich auf Sie,<br>
-                    Ihr
-                    Jörg Müsebeck
+    <section class="hero" id="start">
+        <div class="wrap hero-inner">
+            <div class="hero-text">
+                <p class="eyebrow">Im Kulturforum Logenhaus Erlangen</p>
+                <h1>Tanzen ist gut für Körper und Seele</h1>
+                <p class="hero-lead">Hochzeitskurs, Anfänger, Fortgeschrittene und Tanzkreis – jeden Sonntag mit
+                    Jörg Müsebeck.</p>
+                <p class="hero-actions">
+                    <a class="button" href="#kurse">Kurse und Termine</a>
+                    <a class="button button-light" href="#kontakt">Kontakt</a>
                 </p>
             </div>
+            <img class="hero-photo" src="img/joerg2.jpg" alt="Jörg Müsebeck">
         </div>
-        <!-- /.row -->
+    </section>
 
-    </div>
-</section>
+    <section class="section" id="kurse">
+        <div class="wrap">
+            <h2 class="heading">Kurse, Termine und Preise</h2>
+            <p class="notice">Alle Kurse finden <strong>sonntags</strong> statt, ab 3 Paaren.
+                Die Preise gelten für Neueinsteiger ab 1. September 2025.</p>
 
-<!-- Footer -->
-<footer class="footer text-center">
-    <div class="container">
-        <div class="row">
+            <div class="cards">
+                <article class="card">
+                    <h3>Hochzeitskurs</h3>
+                    <p>Mit meiner langjährigen Erfahrung mache ich Sie in 5 Stunden fit für Ihre Hochzeit.</p>
+                    <dl>
+                        <dt>Wann</dt>
+                        <dd>18:00 Uhr, Start am 04.10.2026<br>
+                            Verbindliche Anmeldung bis zum 01.10.2026</dd>
+                        <dt>Preis</dt>
+                        <dd>5 × 1 Std.: 100 €</dd>
+                    </dl>
+                </article>
 
-            <!-- Footer Social Icons -->
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Interesse geweckt?</h4>
-                <p class="lead mb-0">
-                    Rufen Sie mich an!<br>
-                    09131 - 8272781<br>
-                    Oder mailen Sie mir:<br>
-                    <a href="mailto:tanzthurek@web.de">tanzthurek@web.de</a>
-                </p>
+                <article class="card">
+                    <h3>Bodyflirt</h3>
+                    <p>Anfänger lernen bei mir in 10 Stunden die wichtigsten Grundschritte.</p>
+                    <dl>
+                        <dt>Wann</dt>
+                        <dd>18:00 Uhr, Start am 04.10.2026<br>
+                            Verbindliche Anmeldung bis zum 01.10.2026</dd>
+                        <dt>Preis</dt>
+                        <dd>10 × 1 Std.: 180 €</dd>
+                    </dl>
+                </article>
+
+                <article class="card">
+                    <h3>Hobbykreis</h3>
+                    <p>Fortgeschrittene, erfahrene Tänzer können sich hier weiterentwickeln.</p>
+                    <dl>
+                        <dt>Wann</dt>
+                        <dd>19:00 Uhr – Sie können jederzeit anfangen</dd>
+                        <dt>Preis</dt>
+                        <dd>je 1 Std. Unterricht<br>
+                            5er-Karte: 100 €, 10er-Karte: 180 €</dd>
+                    </dl>
+                </article>
+
+                <article class="card">
+                    <h3>Tanzkreis</h3>
+                    <p>Sie sind herzlich willkommen im langjährigen Tanzfreundeskreis der Tanzschule Thurek.</p>
+                    <dl>
+                        <dt>Wann</dt>
+                        <dd>20:00 Uhr – Sie können jederzeit anfangen</dd>
+                        <dt>Preis</dt>
+                        <dd>2 Std. Unterricht pro Woche: 49 € monatlich</dd>
+                    </dl>
+                </article>
+
+                <article class="card">
+                    <h3>Übungsparties</h3>
+                    <p>Gemeinsam Spaß haben in der Praxis.</p>
+                    <dl>
+                        <dt>Wann</dt>
+                        <dd>19:00–22:00 Uhr am 11.10.2026<br>
+                            und im Dezember (Weihnachtstanz, Termin folgt)<br>
+                            <small>An diesen Terminen entfallen Hobby- und Tanzkreis.</small></dd>
+                        <dt>Preis</dt>
+                        <dd>Tanzkreis: kostenlos<br>
+                            Andere Kurse: 5 €, Gäste: 7 €</dd>
+                    </dl>
+                </article>
+
+                <article class="card">
+                    <h3>Privatstunden</h3>
+                    <p>Ich unterrichte auch Gruppen und Paare in privaten oder in diversen Gruppenräumen.</p>
+                    <dl>
+                        <dt>Wann</dt>
+                        <dd>Nach Absprache</dd>
+                        <dt>Preis</dt>
+                        <dd>60 Minuten: 75 €</dd>
+                    </dl>
+                </article>
             </div>
-
-            <!-- Footer About Text -->
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Sie finden uns:</h4>
-                <p class="lead mb-0">Universitätsstr. 25
-                    <br>91054 Erlangen<br>
-                    Schauen Sie einfach bei uns vorbei<br>
-                    Sonntag von 19:00 - 22:00 Uhr<br>
-                    <a href="#" data-toggle="modal" data-target="#portfolioModal1">
-                        Anfahrt
-                    </a>
-                </p>
-            </div>
-
-            <!-- Footer Location -->
-            <div class="col-lg-4">
-                <h4 class="text-uppercase mb-4">Impressum</h4>
-                <p class="lead mb-0">Verantwortlich: Jörg Müsebeck<br>
-                    Kontakt: 0176 43482463<br>
-                    <a href="#" data-toggle="modal" data-target="#portfolioModal3">Datenschutz</a>
-                </p>
-            </div>
-
-
         </div>
+    </section>
+
+    <section class="section section-tinted" id="ueber-mich">
+        <div class="wrap about">
+            <img class="about-photo" src="img/joerg.jpg" alt="Jörg Müsebeck beim Tanzen">
+            <div>
+                <h2 class="heading">Über mich</h2>
+                <p>Ich bin Mitte 60 und lebe meinen Lebenstraum – das Tanzen – noch immer aus. Mit 15 habe ich 1970
+                    meinen ersten Tanzkurs belegt. Nachdem ich viele Kurse besuchte, habe ich auch einige Jahre
+                    erfolgreich an Tanzturnieren teilgenommen. Es wurden von mir in der Tanzschule diverse Formationen
+                    aufgebaut.</p>
+                <p>Nach einer 3-jährigen ADTV-Tanzlehrerausbildung hatte ich die fachlichen Voraussetzungen und kaufte
+                    1987 die „Tanzschule Thurek“ in Erlangen. Seit einigen Jahren betreibe ich sie nicht mehr
+                    kommerziell ausgerichtet, sondern nur noch hobbymäßig! Und dieses Hobby möchte ich mit Ihnen
+                    teilen!</p>
+                <p>Ich biete Ihnen vom Anfänger über Fortgeschrittene bis zum Tanzkreis einmal wöchentlich an, diesem
+                    Hobby nachzugehen. Natürlich werden auch Hochzeitskurse und Privatstunden angeboten.</p>
+                <p class="signature">Ich freue mich auf Sie,<br>Ihr Jörg Müsebeck</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="kontakt">
+        <div class="wrap">
+            <h2 class="heading">Interesse geweckt?</h2>
+            <div class="contact">
+                <div>
+                    <h3>Rufen Sie mich an</h3>
+                    <p><a href="tel:+4991318272781">09131 – 8272781</a><br>
+                        oder mailen Sie mir:<br>
+                        <a href="mailto:tanzthurek@web.de">tanzthurek@web.de</a></p>
+                    <h3>Schauen Sie vorbei</h3>
+                    <p>Kulturforum Logenhaus<br>
+                        Universitätsstraße 25<br>
+                        91054 Erlangen<br>
+                        sonntags von 19:00 bis 22:00 Uhr</p>
+                    <h3>Anfahrt</h3>
+                    <p>Parkplätze finden Sie bei uns im Hof. Die Stadtbusse der Linien 288, 289 und 293 halten fast
+                        vor der Tür (Lorlebergplatz). Vom Hugenottenplatz laufen Sie knapp 10 Minuten, vom Bahnhof etwas
+                        länger.</p>
+                </div>
+                <img class="map" src="img/anfahrt.jpg" alt="Lageplan: Kulturforum Logenhaus, Universitätsstraße 25">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="wrap footer-inner">
+        <p>
+            <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
+            © Tanzschule Thurek
+        </p>
+        <p>Impressum: verantwortlich Jörg Müsebeck, Kontakt <a href="tel:+4917643482463">0176 43482463</a></p>
+        <p><button class="link" type="button" popovertarget="datenschutz">Datenschutz</button></p>
     </div>
 </footer>
 
-<!-- Copyright Section -->
-<section class="copyright py-4 text-center text-white">
-    <div class="container">
-        <small>Copyright &copy; thurek.de 2022</small>
-    </div>
-</section>
-
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
+<!-- Ohne JavaScript: popover öffnet und schließt der Browser selbst (auch per Esc oder Klick daneben) -->
+<div class="dialog" id="datenschutz" popover role="dialog" aria-labelledby="datenschutz-titel">
+    <button class="dialog-close" type="button" popovertarget="datenschutz" popovertargetaction="hide"
+            aria-label="Schließen">×</button>
+    <h2 id="datenschutz-titel">Datenschutzerklärung</h2>
+    <p>Diese Webseite ist ohne Registrierung zugänglich. Wir verwenden keine Cookies und keine Analyse-Software.
+        Daher werden nur folgende Daten von Ihnen an unseren Provider übermittelt: Ihre IP-Adresse, der verwendete
+        Browser (Version, Betriebssystem), die eingestellte bevorzugte Sprache, die Uhrzeit des Besuchs und von welcher
+        Seite Sie über einen Link zu dieser Seite gefolgt sind. Diese Daten werden aus technischen Gründen an alle
+        Webseiten gesendet, die Sie besuchen. Um daraus Rückschlüsse auf Ihre Identität zu ziehen, sind weitere
+        Informationen von Ihrem Internetprovider nötig, auf die wir keinen Zugriff haben. Ggf. werden Teile dieser
+        Daten für einige Zeit in Logdateien protokolliert.</p>
+    <p>Unser Provider ist GitHub Pages (GitHub Inc., USA); er erhält diese Daten und speichert die IP-Adresse aus
+        Sicherheitsgründen, siehe
+        <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung
+            von GitHub</a>.</p>
+    <p>Falls Sie Fragen zu dieser Erklärung haben oder eine Verletzung Ihrer Rechte vermuten, so teilen Sie das bitte
+        per E-Mail an <a href="mailto:tanzthurek@web.de">tanzthurek@web.de</a> mit, damit wir umgehend Abhilfe schaffen
+        können.</p>
 </div>
-
-<!-- Portfolio Modals -->
-
-<!-- Portfolio Modal 1 -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-     aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-            </button>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                id="portfolioModal1Label">Anfahrt</h2>
-                            <!-- Icon Divider -->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon">
-                                    <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
-                                </div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Text -->
-                            <p class="mb-5">
-                                Parkplätze finden Sie bei uns im Hof<br>
-                                Die Stadtbusse der Linie 293, 288, 289 halten fast vor der Tür (Lorlebergplatz).<br>
-                                Vom Hugenottenplatz laufen Sie in knapp 10 Minuten, vom Bahnhof etwas länger zu uns.
-                            </p>
-                            <!-- Portfolio Modal - Image -->
-                            <div class="mb-5">
-                                <img class="rounded anfahrt" src="img/anfahrt.jpg" alt="">
-                            </div>
-
-                            <button class="btn btn-primary" href="#" data-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
-                                Schließen
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Portfolio Modal 2 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-     aria-labelledby="portfolioModal3Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-            </button>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                id="portfolioModal3Label">Datenschutzerklärung</h2>
-                            <!-- Icon Divider -->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon">
-                                    <svg class="tanzpaar" aria-hidden="true"><use href="#tanzpaar"/></svg>
-                                </div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Text -->
-                            <p class="mb-5 lead">
-                                Diese Webseite ist ohne Registrierung zugänglich. Wir verwenden keine Cookies und keine
-                                Analyse-Software. Daher werden nur folgende Daten von Ihnen an unseren Provider
-                                übermittelt:
-                                Ihre IP Adresse, der verwendete Browser (Version, Betriebssystem), die eingestellte
-                                bevorzugte Sprache, die Uhrzeit des Besuchs und von welcher Seite sie über einen Link zu
-                                dieser
-                                Seite gefolgt sind. Diese Daten werden aus technischen Gründen an alle Webseiten
-                                gesendet, die Sie besuchen. Um daraus Rückschlüsse auf Ihre Identität zu ziehen, sind
-                                weitere Informationen
-                                von Ihrem Internetprovider nötig, auf die wir keinen Zugriff haben. Ggf. werden Teile
-                                dieser Daten für einige Zeit in Logdateien protokolliert.<br>
-                                Unser Provider ist GitHub Pages (GitHub Inc., USA); er erhält diese Daten und speichert
-                                die IP-Adresse aus Sicherheitsgründen, siehe
-                                <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung
-                                von GitHub</a>.<br>
-                                Falls Sie Fragen zu dieser Erklärung haben oder eine Verletzung Ihrer Rechte vermuten,
-                                so teilen Sie das bitte per E-Mail an tanzthurek@web.de mit,
-                                damit wir umgehend Abhilfe schaffen können.
-                            </p>
-
-                            <button class="btn btn-primary" href="#" data-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
-                                Schließen
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/freelancer.min.js"></script>
 
 </body>
-
 </html>
