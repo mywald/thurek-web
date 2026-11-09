@@ -389,3 +389,4 @@ svg.map { display: block; width: 100%; height: auto; border: 1px solid var(--lin
 .map-north path { fill: var(--ink); }
 .map-north text { font: 700 11px Montserrat, sans-serif; fill: var(--ink); }
 .map-credit { font-size: 10px; fill: var(--ink-soft); }
+.map-drive path { stroke-width: 8; } .map-drive .casing { stroke-width: 11; }
