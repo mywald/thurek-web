@@ -15,6 +15,11 @@ mit Beschreibung, Termin und Preis.
 
 Eingecheckt ist nur, was die Seite ausliefert (`.gitignore` ist eine Whitelist).
 
+## Vorschau
+
+Im Heimnetz unter https://pages.mywald.de/websites/thurek/ (GitLab Pages, `.gitlab-ci.yml`),
+aktualisiert bei jedem Merge auf `main`.
+
 ## Rechte
 
 Texte, Fotos und Logo (Tanzpaar): © Tanzschule Thurek, alle Rechte vorbehalten.
