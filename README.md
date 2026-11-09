@@ -9,7 +9,9 @@ mit Beschreibung, Termin und Preis.
   selbst öffnet und schließt
 - `css/thurek.css` – Layout und Farben (oben die Farbvariablen)
 - `css/fonts.css`, `fonts/` – Lato und Montserrat, lokal statt von Google Fonts
-- `img/` – Fotos, Anfahrtsskizze, Icon für Apple-Geräte; `favicon.svg`/`favicon.ico` im Hauptverzeichnis
+- `img/` – Fotos, Icon für Apple-Geräte; `favicon.svg`/`favicon.ico` im Hauptverzeichnis
+- Lageskizze im Kontakt: SVG direkt in `index.html`, vereinfacht nach OpenStreetMap (Daten ODbL,
+  daher der Hinweis „© OpenStreetMap-Mitwirkende“ in der Skizze)
 
 Eingecheckt ist nur, was die Seite ausliefert (`.gitignore` ist eine Whitelist).
 

@@ -360,3 +360,32 @@ a:hover { color: var(--ink); }
 .dialog-close:hover { background: var(--orange); }
 
 :focus-visible { outline: 3px solid var(--orange-dark); outline-offset: 2px; }
+
+/* Lageskizze (inline-SVG im Kontakt, Schrift von der Seite) */
+
+svg.map { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+.map-ground { fill: var(--orange-soft); }
+.map-road path, .map-road circle { fill: none; stroke: #fff; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+.map-road .casing { stroke: #e3cfc0; stroke-width: 18; }
+.map-minor path { stroke-width: 8; }
+.map-minor .casing { stroke-width: 11; }
+.map-island { fill: #d9e8c8; }
+.map-building rect { fill: #ead9cb; }
+.map-target { fill: var(--orange); }
+.map-target-icon { color: #fff; }
+.map-label text { font-size: 12px; fill: var(--ink-soft); text-anchor: middle; dominant-baseline: central; letter-spacing: .02em; }
+.map-label .small { font-size: 10px; }
+.map-place { font: 700 15px Montserrat, sans-serif; fill: var(--ink); }
+.map-note { font-size: 13.5px; fill: var(--ink); }
+.map .strong { font-weight: 700; }
+.map-callout path { stroke: var(--orange); stroke-width: 2; fill: none; }
+.map-callout rect { fill: #fff; stroke: var(--orange); stroke-width: 2; }
+.map-callout text { font-size: 13px; fill: var(--ink); }
+.map-callout .strong { font: 700 15px Montserrat, sans-serif; }
+.map-parking circle { fill: #2f6db5; }
+.map-parking text, .map-stop text { font: 700 13px Montserrat, sans-serif; fill: #fff; }
+.map-stop circle { fill: #2e8b57; stroke: #f7d94c; stroke-width: 2.5; }
+.map-stop text { font-size: 11px; }
+.map-north path { fill: var(--ink); }
+.map-north text { font: 700 11px Montserrat, sans-serif; fill: var(--ink); }
+.map-credit { font-size: 10px; fill: var(--ink-soft); }
