@@ -3,6 +3,8 @@
 /*
 !/.gitignore
 !/README.md
+# Vorschau über GitLab Pages (pages.mywald.de)
+!/.gitlab-ci.yml
 !/CNAME
 !/index.html
 !/favicon.ico
