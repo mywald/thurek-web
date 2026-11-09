@@ -8,11 +8,14 @@
 !/CNAME
 !/index.html
 !/img/
+# Schriften (Lato, Montserrat) samt Lizenz, lokal statt von Google Fonts
+!/fonts/
 
 # Eigene Styles und Scripts: nur die eingebundenen Dateien
 !/css/
 /css/*
 !/css/thurek.min.css
+!/css/fonts.css
 !/js/
 /js/*
 !/js/freelancer.min.js
